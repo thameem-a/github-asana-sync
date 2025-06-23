@@ -63,7 +63,7 @@ def get_github_issues():
     
     if "data" not in data:
         print("GitHub API response (unexpected):", json.dumps(data, indent=2))
-    return []
+        return []
     
     # Extract and filter open issues
     open_issues = []
